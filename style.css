@@ -1,5 +1,4 @@
 /* MISC */
-
 html {
   position: relative;
   height: 100%;
@@ -21,17 +20,23 @@ body {
 
 .btn {
 	transition: none;
+	margin-bottom: .5em;
 }
 
 .alert {
 	border-radius: 0;
 	border-left: 0;
 	border-right: 0;
+	margin-bottom: 0;
 }
 
-/* HEADER */
+/* MAIN */
+.main {
+	/* display: flex; */
+}
 
-.header {
+/* ASIDE */
+.aside {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -42,68 +47,116 @@ body {
 	align-items: flex-start;
 }
 
-.header-algo {
+.aside-algo {
 	width: 100%;
-	margin-bottom: 30px;
 }
 
-.header-algo .card-body {
+.aside-algo .card-body {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
 
-.header-algo-image {
+.aside-algo-image {
 	max-width: 80px;
 	max-height: 80px;
 	margin: auto;
 }
 
-.header-jc {
+.aside-jc {
 	display: flex;
 	width: 100%;
+	margin-bottom: 30px;
 }
 
-.header-jc-text {
+.aside-jc-text {
 	text-align: center;
 }
 
 @media (min-width: 992px) {
-	.header {
-		flex-direction: row;
-	}
-
-	.header-algo,
-	.header-jc {
-		width: initial;
-		margin-bottom: 0;
-	}
-
-	.header-algo .card-body {
-		flex-direction: row;
-		text-align: initial;
-	}
-
-	.header-algo-text {
-		padding-left: 1em;
+	.main {
+		display: flex;
 	}
 }
 
 /* BOOKS */
-
 .books {
 	display: flex;
-	justify-content: space-evenly;
+	flex-direction: column;
+	flex-grow: 1;
+	justify-content: space-between;
+	max-width: 1200px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
-/* FOOTER */
+.books-secondary {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
-.footer {
+.books-secondary hr {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.book {
 	text-align: center;
 }
 
-/* ICONS */
+.books-secondary .book:last-child {
+	margin-bottom: 0;
+}
 
+.book-image,
+.book-title {
+	margin-bottom: 1em;
+}
+
+.book-subtitle {
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+.book-image {
+	max-width: 100px;
+}
+
+.book.naitre .book-image {
+	max-width: 200px;
+}
+
+@media (min-width: 992px) {
+	.books {
+		flex-direction: row;
+		padding-left: 60px;
+	}
+
+	.books-main {
+		margin-right: 45px;
+	}
+
+	.books-secondary hr {
+		display: none;
+	}
+
+	.book {
+		margin-bottom: 0;
+	}
+}
+
+/* FOOTER */
+.footer {
+	text-align: center;
+	margin-top: 30px;
+}
+
+/* ICONS */
 svg.bi {
   font-size: 1.1em;
   vertical-align: text-bottom;
