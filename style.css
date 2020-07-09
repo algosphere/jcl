@@ -1,35 +1,116 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans|Overlock';
-
-body {
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-	font-size: 16px;
-	cursor: default;
-	background-color: #f5f5f5;
-}
-
-.container-fluid {
-	padding-top: 10px;
-}
-
-a {
-	text-decoration: none;
-	color: blue;
-}
-
-a:hover {
-	color: #008AFF;
-	text-decoration: none;
-}
-
-.block {
-	display: block;
-}
-
-.titre-livre {
-	font-family: 'Overlock', cursive;
-}
-
-.well {
-	background-color: #fff;
+/* MISC */
+
+html {
+  position: relative;
+  height: 100%;
+  overflow-y: scroll !important;
+}
+
+body {
+  min-height: 100%;
+  cursor: default;
+  display: flex;
+	flex-direction: column;
+	background-color: #f5f5f5;
+}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.btn {
+	transition: none;
+}
+
+.alert {
+	border-radius: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+/* HEADER */
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	align-items: flex-start;
+}
+
+.header-algo {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.header-algo .card-body {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.header-algo-image {
+	max-width: 80px;
+	max-height: 80px;
+	margin: auto;
+}
+
+.header-jc {
+	display: flex;
+	width: 100%;
+}
+
+.header-jc-text {
+	text-align: center;
+}
+
+@media (min-width: 992px) {
+	.header {
+		flex-direction: row;
+	}
+
+	.header-algo,
+	.header-jc {
+		width: initial;
+		margin-bottom: 0;
+	}
+
+	.header-algo .card-body {
+		flex-direction: row;
+		text-align: initial;
+	}
+
+	.header-algo-text {
+		padding-left: 1em;
+	}
+}
+
+/* BOOKS */
+
+.books {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* FOOTER */
+
+.footer {
+	text-align: center;
+}
+
+/* ICONS */
+
+svg.bi {
+  font-size: 1.1em;
+  vertical-align: text-bottom;
+  width: 1.25em;
+
+  &.bi-box-arrow-up-right {
+    vertical-align: sub;
+    margin-left: .1em;
+  }
 }

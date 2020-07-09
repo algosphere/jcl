@@ -2,47 +2,45 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 	<title>Jean-Christophe Lurenbaum</title>
 </head>
 <body>
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-3">
-				<div class="well">
-					<div class="media" style="text-align: left;">
-						<div class="media-left media-middle">
-							<a href="http://algosphere.org/fr" target="_blank">
-							<img class="media-object img-rounded" src="./images/neuronesglobeHighlight.gif" alt="Logo Algosphère" width=70>
-							</a>
-						</div>
-						<div class="media-body media-middle">
-							<h4 class="media-heading"><a target="_blank" href="http://algosphere.org/fr">Alliance Algosphère</a></h4>
-							<em>pour l'allègement de la souffrance dans le monde</em>
-						</div>
+		<header class="header">
+			<div class="header-algo card">
+				<div class="card-body">
+					<a target="_blank" href="http://algosphere.org/fr"><img class="header-algo-image img-fluid" src="./images/logo-trans.png" alt="Algosphere Alliance logo"></a>
+					<div class="header-algo-text">
+						<h4><a target="_blank" href="http://algosphere.org/fr">Alliance Algosphère</a></h4>
+						<em>pour l'allègement de la souffrance</em>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6"><br></div>
-			<div class="col-md-3">
-				<div class="well">
-					<div class="media" style="text-align: right;">
-					  <div class="media-body media-middle">
-						<h4 class="media-heading">Jean-Christophe Lurenbaum</h4>
-						<a href="mailto:jean-christophe.lurenbaum@laposte.net" target="_blank" class="btn btn-default" role="button">Contact</a>
-					  </div>
-					   <div class="media-right media-middle">
-						<a href="mailto:jean-christophe.lurenbaum@laposte.net">
-						  <img class="media-object img-rounded" src="./images/JCLprocheModif.JPG" alt="Photo Jean-Christophe Lurenbaum" width=150>
-						</a>
-					  </div>
-					</div>
+			<div class="header-jc card">
+				<img src="./images/JCLprocheModif.JPG" class="header-jc-image card-img-top" alt="Photo of Jean-Christophe Lurenbaum">
+				<div class="header-jc-text card-body">
+					<h5 class="card-title">Jean-Christophe Lurenbaum</h5>
+					<a class="btn btn-dark no-external-icon" href="mailto:jean-christophe.lurenbaum@laposte.net" role="button">Contact</a>
 				</div>
 			</div>
-		</div><br><br>
+		</header>
+		<article class="books">
+			<div class="book-1">book-1</div>
+			<div class="book-2">book-2</div>
+			<div class="book-3">book-3</div>
+		</article>
+		<footer class="footer">
+			<div class="alert alert-success" role="alert">
+				La vente de ces livres finance l’<a href="https://algosphere.org/fr" target="_blank">Alliance Algosphère</a> à hauteur de 60% des revenus.
+			</div>
+		</footer>
+
+
+
 		<div class="row">
 			<div class="col-md-2">
 				<a target="_blank" href="https://www.lulu.com/fr/shop/jean-christophe-lurenbaum/la-r%C3%A9glementation-du-suicide/paperback/product-18n2mnev.html"><img width=169 alt="Couverture du livre La réglementation du suicide" src="./images/couverturesuicide.jpg" class="img-thumbnail"></a><br><br>
@@ -73,11 +71,10 @@
 				</div>
 			</div>
 		</div><br>
-		<div class="row">
-			<div class="col-md-12">
-				<p>La vente de ces livres finance l’<a href="http://algosphere.org/fr" target="_blank">Alliance Algosphère</a> à hauteur de 60% des revenus.</p>
-			</div>
-		</div><br>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="./script.js"></script>
 </body>
 </html>
