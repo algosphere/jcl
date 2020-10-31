@@ -126,7 +126,6 @@ article {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 60px;
 }
 
 .books-secondary hr {
@@ -169,6 +168,7 @@ article {
 
 	.books-secondary {
 		flex-direction: row;
+		margin-top: 60px;
 	}
 
 	.books-secondary .book {
