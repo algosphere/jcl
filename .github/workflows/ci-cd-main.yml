@@ -23,6 +23,5 @@ jobs:
       if: success()
     - name: Deploy site
       run: |
-        npm i -g netlify-cli
-        netlify deploy --prod --dir .
+        npx netlify-cli deploy --prod --dir .
       if: success()
