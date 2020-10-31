@@ -39,9 +39,14 @@ body {
 }
 
 /* MAIN */
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
 @media (min-width: 992px) {
 	.main {
-		display: flex;
+		flex-direction: row;
 	}
 }
 
@@ -94,13 +99,15 @@ article {
 }
 
 @media (min-width: 992px) {
-	.aside-left {
+	.aside {
 		min-width: 250px;
 		max-width: 400px;
 	}
+}
 
-	.aside-right {
-		max-width: 500px;
+@media (max-width: 991.98px) {
+	.aside {
+		order: 2;
 	}
 }
 
@@ -198,4 +205,11 @@ svg.bi {
 .footer {
 	text-align: center;
 	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+	.footer {
+		margin-bottom: 0;
+	}
 }
