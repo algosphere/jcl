@@ -99,7 +99,7 @@ article {
 @media (min-width: 992px) {
 	.aside-left {
 		min-width: 250px;
-		max-width: 250px;
+		max-width: 400px;
 	}
 
 	.aside-right {
