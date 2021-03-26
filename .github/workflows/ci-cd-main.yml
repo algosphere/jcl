@@ -6,7 +6,6 @@ on:
       - main
 
 env:
-  NODE_VERSION: '12.14.0'
   NETLIFY_SITE_ID: '1d7b620a-55cd-43e2-a355-5108c202cc02'
   NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN_JCL }}
 
@@ -16,12 +15,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
-    - name: Setup Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-      if: success()
     - name: Deploy site
-      run: |
-        npx netlify-cli deploy --prod --dir .
+      run: npx netlify-cli deploy --prod --dir .
       if: success()
